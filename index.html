@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ko</title>
+    <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+
+        .logo-container {
+            max-width: 80vw;
+            max-height: 80vh;
+            mix-blend-mode: difference;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                filter: invert();
+            }
+            label {
+                --c-cool: #00ffff;
+                text-shadow: 0 0 5px var(--c-cool),0 0 10px var(--c-cool),0 0 20px var(--c-cool),0 0 40px var(--c-cool)
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="logo-container">
+        <img src="img/logo.svg" alt="3ko.ch Logo">
+        <label>contact us - <a href="mailto:hi@bbo.do">hi@bbo.do</a></label>
+    </div>
+    
+    <script>
+        // Array of background images
+        const backgrounds = [
+            'img/IMAGE 2025-11-28 16_52_32.jpg',
+            'img/IMAGE 2025-11-28 16_52_32w.jpg',
+            'img/IMAGE-2025-11-28-16-52-32.png'
+        ];
+        
+        // Select a random background
+        const randomBg = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+        document.body.style.backgroundImage = `url('${randomBg}')`;
+    </script>
+</body>
+</html>
