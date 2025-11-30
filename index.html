@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3ko</title>
     <link rel="icon" type="image/svg+xml" href="img/logo.svg">
+    <link rel="stylesheet" href="fonts/fonts.css">
     <style>
         * {
             margin: 0;
@@ -21,6 +22,7 @@
             background-position: center;
             background-repeat: repeat;
             background-attachment: fixed;
+            background-color: grey;
         }
 
         .logo-container {
@@ -40,8 +42,17 @@
                 filter: invert();
             }
             label {
+                padding: 1rem;
+                font-family: 'clemente-rotunda-regular', monospace;
+                background: grey;
+                font-size: xx-large;
                 --c-cool: #00ffff;
-                text-shadow: 0 0 5px var(--c-cool),0 0 10px var(--c-cool),0 0 20px var(--c-cool),0 0 40px var(--c-cool)
+                text-shadow: 0 0 5px var(--c-cool),0 0 10px var(--c-cool),0 0 20px var(--c-cool),0 0 40px var(--c-cool);
+                a {
+                    font-family: 'webmaster-mono', monospace;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
             }
         }
     </style>
